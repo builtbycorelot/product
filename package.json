@@ -1,0 +1,13 @@
+{
+  "name": "product",
+  "version": "1.0.0",
+  "description": "Product Catalog for CORELOT Homes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
