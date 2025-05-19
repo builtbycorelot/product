@@ -1,0 +1,12 @@
+{
+  "name": "product-metadata",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "dependencies": {
+    "exiftool-vendored": "^24.5.0"
+  },
+  "scripts": {
+    "embed": "node embed.js",
+    "test": "echo \"No tests specified\""
+  }
+}
