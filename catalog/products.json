@@ -1,0 +1,38 @@
+[
+  {
+    "id": "100034",
+    "name": "Bridgeton - Parchment",
+    "image": "../100034 (Bridgeton - Parchment).png",
+    "msds": "",
+    "manufacturer": "",
+    "origin": "",
+    "install_instructions": "",
+    "warranty": "",
+    "cutsheet": "",
+    "price": ""
+  },
+  {
+    "id": "100035",
+    "name": "Bridgeton - Chamois",
+    "image": "../100035 (Bridgeton - Chamois).png",
+    "msds": "",
+    "manufacturer": "",
+    "origin": "",
+    "install_instructions": "",
+    "warranty": "",
+    "cutsheet": "",
+    "price": ""
+  },
+  {
+    "id": "100036",
+    "name": "Glenville Creme",
+    "image": "../100036 (Glenville Creme).png",
+    "msds": "",
+    "manufacturer": "",
+    "origin": "",
+    "install_instructions": "",
+    "warranty": "",
+    "cutsheet": "",
+    "price": ""
+  }
+]
