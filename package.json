@@ -1,7 +1,7 @@
 {
   "name": "product",
   "version": "1.0.0",
-  "description": "Product Catalog for CORELOT Homes",
+  "description": "Product Catalog",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,4 +10,15 @@
   "keywords": [],
   "author": "",
   "license": "ISC"
+###REVIRE AND UPDATE
+  "name": "product-metadata",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "dependencies": {
+    "exiftool-vendored": "^24.5.0"
+  },
+  "scripts": {
+    "embed": "node embed.js",
+    "test": "echo \"No tests specified\""
+  }
 }
