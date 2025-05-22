@@ -1,16 +1,15 @@
 const assert = require('assert');
 
+const path = require('path');
+const fs = require('fs').promises;
+
 const images = [
-  'https://www.bldr.com/resources/catalogs-literature/sample1.jpg',
-  'https://www.bldr.com/resources/catalogs-literature/sample2.jpg'
+  path.join(__dirname, '../products/images/10186 (Maxim - ORB Pendant Light).jpg'),
+  path.join(__dirname, '../products/images/10248 (Moen - ORB Shower Spigot).jpg')
 ];
 
-async function fetchImage(url) {
-  const response = await fetch(url);
-  if (!response.ok) {
-    throw new Error(`Failed to fetch ${url}: ${response.status}`);
-  }
-  return response.arrayBuffer();
+async function fetchImage(file) {
+  return fs.readFile(file);
 }
 
 function hasExif(buffer) {
@@ -29,11 +28,11 @@ function hasExif(buffer) {
 }
 
 (async () => {
-  for (const url of images) {
+  for (const file of images) {
     try {
-      const buffer = await fetchImage(url);
-      assert.ok(hasExif(buffer), `Image ${url} should contain EXIF metadata`);
-      console.log(`${url} contains EXIF metadata`);
+      const buffer = await fetchImage(file);
+      assert.ok(hasExif(buffer), `Image ${file} should contain EXIF metadata`);
+      console.log(`${file} contains EXIF metadata`);
     } catch (err) {
       console.error(err);
       process.exitCode = 1;
