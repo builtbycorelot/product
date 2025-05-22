@@ -1,5 +1,3 @@
-const fs = require('fs');
-
 function readUInt16(buffer, offset, le) {
   return le ? buffer.readUInt16LE(offset) : buffer.readUInt16BE(offset);
 }
